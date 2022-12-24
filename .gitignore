@@ -1,0 +1,32 @@
+examples/
+node_modules/
+dist/
+src/assets
+.parcel-cache
+*.prettierrc
+*.md
+*.package-lock.json copy
+assets/
+images/
+*txt
+
+*Portfolio/
+*Job Descriptions/
+*.eds
+*.enu
+*.cbf
+*.bsl
+*.os
+*.ini
+*.prm
+*.mon
+*.hex
+*.str
+*.txt
+!snaglist.txt
+*.cmd
+VCLtemp/
+*.zip
+*.exe
+*.cprj
+Q Light and RFID Project 1351 Controller.cprj
