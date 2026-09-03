@@ -26,7 +26,6 @@ images/
 !snaglist.txt
 *.cmd
 VCLtemp/
-*.zip
 *.exe
 *.cprj
 Q Light and RFID Project 1351 Controller.cprj
