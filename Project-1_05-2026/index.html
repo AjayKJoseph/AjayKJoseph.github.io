@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CR3133 Diagnostic - Project 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Notice the "../" to route back to the root assets folder -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <style>
+        /* Modern Aspect Ratio CSS for responsive video scaling down to 320px */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            /* Prevents it from getting too massive on desktop */
+            margin: 0 auto;
+            aspect-ratio: 16 / 9;
+            /* Locks the geometry */
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <a href="../index.html" class="logo"><strong>&larr; Back to Portfolio</strong></a>
+            </div>
+        </header>
+
+        <div id="main">
+            <div class="inner">
+                <h1>IFM CR3133 CANopen Firmware Diagnostics</h1>
+
+                <!-- STAR Format Description -->
+                <h3>Project Overview</h3>
+                <ul>
+                    <li><strong>Situation:</strong> Investigating CANopen firmware bridging behavior.</li>
+                    <li><strong>Task:</strong> Analyze filter settings and screen-record the application workflow.</li>
+                    <li><strong>Action:</strong> Captured diagnostic parameters with text overlays to highlight logic
+                        blocks.</li>
+                    <li><strong>Result:</strong> Successfully verified the bridge routing configurations.</li>
+                </ul>
+
+                <hr />
+
+                <!-- HTML5 Video Placeholder -->
+                <div class="video-container">
+                    <!-- Ensure demo.mp4 is placed in project-1_05-2026/media/ -->
+                    <video controls muted autoplay loop>
+                        <source src="CR3133 Setup and Testing - 2 Methods(Handbrake Compressed).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
