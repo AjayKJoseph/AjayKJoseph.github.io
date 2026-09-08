@@ -23,7 +23,9 @@
 
         model-viewer {
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 1 / 1; /* Creates a taller, square box */
+            min-height: 400px; /* Prevents it from getting too small on tiny phones */
+            max-height: 80vh;  /* Prevents it from consuming the whole screen on desktop */
             /* Maintains 3D viewport shape */
             background-color: #f4f4f4;
         }
@@ -51,21 +53,20 @@
 
                 <h3>Project Overview</h3>
                 <ul>
-                    <li><strong>Situation:</strong> Required a portable display module for a Lithium Battery Management
-                        System.</li>
-                    <li><strong>Task:</strong> Design a PCBA to interface directly via CAN network.</li>
+                    <li><strong>Situation:</strong> Required a portable display module for a Lithium ION batteries.</li>
+                    <li><strong>Task:</strong> Design a prototype PCB to interface directly with the battery BMS via CAN network.</li>
                     <li><strong>Action:</strong> Modeled the 3D PCB in KiCad and exported an Interactive BoM for
                         assembly validation.</li>
-                    <li><strong>Result:</strong> Created a highly robust, portable diagnostic visualization tool.</li>
+                    <li><strong>Result:</strong> Created a portable diagnostic visualization tool.</li>
                 </ul>
 
                 <hr />
 
                 <!-- WebGL 3D Model Placeholder -->
-                <h3>3D PCBA Render</h3>
+                <h3>3D PCB Render</h3>
                 <div class="model-container">
-                    <!-- Ensure pcba_model.glb is placed in this folder -->
-                    <model-viewer src="LiIONDisplay.glb" alt="A 3D model of the PCBA" auto-rotate
+                    <!-- Ensure .glb is placed in this folder -->
+                    <model-viewer src="LiIONDisplay.glb" alt="A 3D model of the PCB" auto-rotate
                         camera-controls></model-viewer>
                 </div>
 
